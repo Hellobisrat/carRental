@@ -5,6 +5,7 @@ import {Routes,Route} from 'react-router-dom'
 import Cars from './pages/Cars';
 import CarDetails from './pages/CarDetails';
 import Home from './pages/Home.jsx'
+import Footer from './components/Footer.jsx';
 
 const App = () => {
   const [setShowLogin]=useState(false);
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/car-details/:id' element ={<CarDetails/>}/>
         <Route path='/cars' element ={<Cars/>}/>
       </Routes>
+      {!isOwnerPath && <Footer/>}
     </>
   )
 }
