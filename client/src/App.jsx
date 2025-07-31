@@ -28,11 +28,8 @@ const App = () => {
         <Route index element={<Dashboard/>}/>
         <Route path='add-car' element={<AddCar/>}/>
         <Route path='manage-cars' element={<ManageCar/>}/>
-        <Route path='manage-booking' element={<ManageBooking/>}/>
+         <Route path="manage-bookings" element={<ManageBooking/>} />
 
-        
-  
-        
         </Route>
       </Routes>
       {!isOwnerPath && <Footer/>}
